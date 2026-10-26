@@ -79,7 +79,7 @@ app.delete("/employee/delete/:id", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Hello Lab06: get, post, put, delete");
+  res.send("Hello Lab07: get, post, put, delete");
 });
 
 app.listen(port, () => {

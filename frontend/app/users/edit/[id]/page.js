@@ -11,7 +11,7 @@ export default function Page({ params }) {
   });
 
   useEffect(() => {
-    fetch('http://localhost:3001/employee/' + id)
+    fetch('http://187.77.146.135:3001/employee/' + id)
       .then(res => res.json())
       .then(result => {
         if (Array.isArray(result) && result.length > 0) {
@@ -25,7 +25,7 @@ export default function Page({ params }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch('http://localhost:3001/employee/edit/' + id, {
+    fetch('http://187.77.146.135:3001/employee/edit/' + id, {
       method: 'PUT',
       headers: {
         "Content-Type": "application/json",

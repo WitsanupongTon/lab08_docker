@@ -13,7 +13,7 @@ export default function CreateUserPage() {
     };
 
     // ส่งข้อมูลไปหา Backend
-    fetch('http://localhost:3001/employee/create', {
+    fetch('http://187.77.146.135:3001/employee/create', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
